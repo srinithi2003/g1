@@ -1,0 +1,112 @@
+<!-- <script>
+var id = localStorage.getItem('reg_id'), name = localStorage.getItem('name');
+alert(name);
+$.POST('profile.php', {'id':id,'name':name}, function(data){
+  alert('Login Successful.  Redirect to a different page or something here.');
+})
+</script>
+ -->
+
+<?php
+
+require 'create.php';
+
+$d=$_POST['id'];
+echo $d;
+
+//echo "hi";
+//echo json_encode($_POST['id']);
+
+// echo "hi";
+// $story=$_POST['json'];
+
+
+// echo $story;
+// if (isset($story)){
+// $collection->save($story);
+// }
+
+
+    // $insert=array(
+    //     id=>$_POST["id"],
+    //     name=>$_POST["name"]
+    // );
+
+    // if($collect->insert($insert)){
+    //     echo "data is inserted";
+    // }
+    // else{
+    //     echo "data is not inserted";
+    // }
+    
+
+
+
+
+// //insert
+// $id = "<script>localStorage.getItem('reg_id')</script>";
+// $name = "<script>document.write(localStorage.getItem('name'))</script>";
+// $mail = "<script>document.write(localStorage.getItem('email'))</script>";
+// $age = "<script>document.write(localStorage.getItem('age'))</script>";
+// $contact = "<script>document.write(localStorage.getItem('contact'))</script>";
+
+// echo $name;
+
+// $d=$name;
+// echo $d;
+//$id='<script>localStorage.getItem("name")</script>';
+
+// $ins=$collect->insertOne(
+//     ['id'=>'h','name'=>$name,'mail'=>$mail,'age'=>$age,'contact'=>$contact]
+// );
+
+// printf("inserted %d documetns",$ins->getInsertedCount());
+
+// var_dump($ins->getInsertedId());
+
+// $inss=$collect->insertOne(
+//     ['id'=>'11','name'=>'srthi']
+// );
+// $ins=$collect->insertOne(
+//     ['id'=>'11','name'=>'ithi']
+// );
+
+// printf("inserted %d documetns",$ins->getInsertedCount());
+
+// var_dump($ins->getInsertedId());
+
+
+//display
+
+// $res=$collect->findOne(
+//     ['name'=>'srini']
+// );
+// var_dump($res);
+
+
+
+
+
+
+
+
+// to view databases in system
+// foreach($client->listDatabases() as $db){
+//     var_dump($db);
+// }
+
+
+
+
+
+
+// to create database
+
+// $companydb=$client->profile;
+
+// $res=$companydb->createCollection('profile_details');
+
+// var_dump($res);
+
+
+?>
